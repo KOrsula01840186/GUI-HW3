@@ -1,0 +1,90 @@
+/*Kevin Orsula, 10/23/2022, GUI-HW3*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+#header1 {
+    width: 100%; /*Header takes up the entire view of the screen*/
+    background-color: #169edd; /*Background color of the header*/
+    padding: 25px;
+    box-shadow: 0 3px 5px 3px rgb(175, 175, 175); /*Adds a shadow to the box*/    
+    font-size: 50px; /*Decised the size of the font*/
+    font-weight: 300; /*Darkens the weight of the text*/
+    text-align: center; /*Aligns the text within the header box*/
+}
+#main-wrapper {
+    display: flex; /*Determines the box display of the element*/
+    flex-direction: column; /*Determines how the elements within the box are displayed*/
+    justify-content: flex-start; /*Aligns the items within the flex container along the start of the box*/
+    align-items: center; /*Aligns the items along the center of the box*/
+    margin-top: 25px; /*Adds space around the box between it and other elements on the page*/
+}
+#form {
+    display: grid; /*Determines to use a grid display box*/
+    margin-left:auto; /*Centers the form on the screen*/
+    margin-right:auto;
+    grid-template-columns: auto auto; /*Two column grid disply for the form*/
+    row-gap: 15px; /*Area between the rows*/
+    column-gap: 15px; /*Area between the columns*/
+    border-radius: 20px; /*Adds a curved corner to the box*/
+    padding: 25px; /*Adds space between content and border*/
+    box-shadow: 0 3px 5px 3px rgb(175, 175, 175); /*Adds a shadow to the box*/
+}
+#form input {
+    width: 50px; /*Sizes the input area for the forms*/
+    text-align: right; /*Aligns text within the forms*/
+    border: none; /*Decides the border of the input boxes*/
+    border-radius: 5px; /*Adds a curved corner to the box*/
+    background-color: #e9e9ed; /*Background color of the input*/
+    padding: 5px;
+}
+#errors {
+    width: 100%; /*Decides the width of the box fills the previous container*/
+    color: red; /*Text within the error box is red*/
+    margin-top: 10px;
+}
+#submit-button {
+    border-radius: 10px; /*Adds a curved corner to the box*/
+    padding: 10px;
+    grid-column: 1 / span 2; /*Where button is located within the form*/
+    border: none; /*Removes the border around the button*/
+    background-color: #169edd; /*Colors the button*/
+}
+#submit-button:hover {
+    cursor: pointer; /*When cursor is over the submit button*/
+    background-color: #077bb1; /*Colors the button when hovered*/
+}
+#mult-table-container {
+    width: 70%; /*The mult table will take up 60% of whatever the screen size is in width*/
+    height: 500px; /*The height of the mult table will be a constant 500px*/
+    overflow: auto; /*Adds a scroll when the contant of the mult table is larger than the specified size*/
+    border-radius: 25px; /*Adds a curved corner to the box*/
+    margin-top: 25px; /*Adds space around the box between it and other elements on the page*/
+}
+#mult-table {
+    width: 100%; /*The mult table takes up the full size of the container box*/
+    height: 100%;
+}
+#mult-table tr:first-child td:first-child { /*Top left corner of table*/
+    background-color: rgb(31, 84, 230);
+}
+#mult-table tr:first-child td:not(:first-child), 
+#mult-table td:first-child { /*Top row and left column for submited values*/
+    background-color: #169edd;
+}
+/*These create the cheker pattern within the table*/
+#mult-table tr:nth-child(even):not(:first-child) td:nth-child(even):not(:first-child), 
+#mult-table tr:nth-child(odd):not(:first-child) td:nth-child(odd):not(:first-child)  {
+    background-color: #e9e9ed;
+}
+#mult-table tr:nth-child(even):not(:first-child) td:nth-child(odd):not(:first-child), 
+#mult-table tr:nth-child(odd):not(:first-child) td:nth-child(even):not(:first-child)  {
+    background-color: #b7b7b7;
+}
+#mult-table td {
+    padding: 10px;
+    text-align: center; /*Centers the text within the table within the squares*/
+}
+
