@@ -3,13 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 20px;
 }
 #header1 {
     width: 100%; /*Header takes up the entire view of the screen*/
     background-color: #169edd; /*Background color of the header*/
-    padding: 25px;
-    box-shadow: 0 3px 5px 3px rgb(175, 175, 175); /*Adds a shadow to the box*/    
+    padding: 25px;   
     font-size: 50px; /*Decised the size of the font*/
     font-weight: 300; /*Darkens the weight of the text*/
     text-align: center; /*Aligns the text within the header box*/
@@ -28,9 +27,8 @@
     grid-template-columns: auto auto; /*Two column grid disply for the form*/
     row-gap: 15px; /*Area between the rows*/
     column-gap: 15px; /*Area between the columns*/
-    border-radius: 20px; /*Adds a curved corner to the box*/
     padding: 25px; /*Adds space between content and border*/
-    box-shadow: 0 3px 5px 3px rgb(175, 175, 175); /*Adds a shadow to the box*/
+    border: 2px solid #169edd; /*Adds colored border around form*/
 }
 #form input {
     width: 50px; /*Sizes the input area for the forms*/
@@ -60,8 +58,8 @@
     width: 70%; /*The mult table will take up 60% of whatever the screen size is in width*/
     height: 500px; /*The height of the mult table will be a constant 500px*/
     overflow: auto; /*Adds a scroll when the contant of the mult table is larger than the specified size*/
-    border-radius: 25px; /*Adds a curved corner to the box*/
     margin-top: 25px; /*Adds space around the box between it and other elements on the page*/
+    margin-bottom: 20px;
 }
 #mult-table {
     width: 100%; /*The mult table takes up the full size of the container box*/
